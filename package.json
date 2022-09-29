@@ -1,0 +1,30 @@
+{
+  "name": "aframe-topic-test",
+  "version": "1.0.0",
+  "description": "Lab for JS library A-frame environment.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ./server/app.js",
+    "dev-start": "nodemon ./server/app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ulldecorb/aframe-topic-test.git"
+  },
+  "keywords": [],
+  "author": "Ausias Bertran",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ulldecorb/aframe-topic-test/issues"
+  },
+  "homepage": "https://github.com/ulldecorb/aframe-topic-test#readme",
+  "dependencies": {
+    "@ar-js-org/ar.js": "3.4.0",
+    "express": "4.18.1",
+    "mind-ar": "1.1.5"
+  },
+  "devDependencies": {
+    "nodemon": "2.0.20"
+  }
+}
