@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+ 
+<head>
+   <meta charset="utf-8">
+   <title>A-FRAME LAB</title>
+   <meta name="description" content="A-FRAME LAB">
+   <link rel="icon" type="image/x-icon" href="https://aiconica.net/previews/thunder-icon-1180.png">
+ 
+ 
+   <!-- Styles -->
+   <link href="styles/app.css" rel="stylesheet" type="text/css">
+ 
+   <!-- Inludes -->
+   <script src="https://aframe.io/releases/1.3.0/aframe.min.js"></script>
+   <script src="js/createobjects.component.js"></script>
+</head>
+ 
+<body>
+   <div class="next">
+       <button class="next-button">NEXT</button>
+   </div>
+   <a-scene >
+       <!-- <a-box position="-1 0.5 -3" rotation="0 45 0" color="#4CC3D9"></a-box>
+       <!-- <a-sphere position="0 1.25 -5" radius="1.25" color="#EF2D5E"></a-sphere> -->
+       <a-cylinder position="1 0.75 -3" radius="0.5" height="1.5" color="#AAA"></a-cylinder> -->
+       <!-- <a-plane position="0 1.5 -4" rotation="0 0 0" width="4" height="4" color="#4C6793"></a-plane> -->
+       <a-sky color="#000"></a-sky>
+       <!-- <a-circle color="#CCC" radius="20"></a-circle> -->
+       <a-circle src="#platform" radius="50" rotation="-90 0 0"></a-circle>
+      
+       <a-entity text="value: Hello World;"></a-entity>
+      
+      
+       <a-entity
+           geometry="primitive: plane; width: 15"
+           material="color: #000"
+           position="1.75 1.60 -0.5"
+           light="type: point; intensity: 2.0"
+           text="
+           color: #FF1E1E;
+           align: left;
+           width: 400;
+           value: La resposta encara no es mostra i es esquiva.;"
+       >
+       </a-entity>
+       <a-entity
+           geometry="primitive: plane; width: 15" 
+           rotation="0 -90 0"
+           material="color: #000"
+           position="4 1.60 -0.5"
+           text="
+           color: #FF1E1E;
+           align: left;
+           width: 4;
+           value: És cap aquí, en aquesta direcció, segueix avancant cap endevant sempre que puguis, i ...;"
+       >
+       <a-entity
+           geometry="primitive: plane; width: 15" 
+           rotation="0 -90 0"
+           material="color: #000"
+           position="4 1.60 -0.5"
+           text="
+           color: #FF1E1E;
+           align: left;
+           width: 4;
+           value: FRENA quan acabis de lleguir, parat i enlaire el cap;"
+       >
+       </a-entity>
+      
+ 
+       <!-- <a-entity position="0 1.5 -1 text="value: L; color=#FF1E1E"></a-entity> -->
+       <!-- <a-entity position="0 1.5 -2 text="value: A;"></a-entity>
+       <a-entity position="0 1.5 -4" text="value: R;" color="#FF1E1E"></a-entity>
+       <a-entity position="0 1.5 -5" text="value: E;" color="#FF1E1E"></a-entity>
+       <a-entity position="0 1.5 -6" text="value: S;" color="#FF1E1E"></a-entity>
+       <a-entity position="0 1.5 -7" text="value: P;" color="#FF1E1E"></a-entity>
+       <a-entity position="0 1.5 -8" text="value: O;" color="#FF1E1E"></a-entity>
+       <a-entity position="0 1.5 -9" text="value: S;" color="#FF1E1E"></a-entity>
+       <a-entity position="0 1.5 -10" text="value: T;" color="#FF1E1E"></a-entity>
+       <a-entity position="0 1.5 -11" text="value: A;" color="#FF1E1E"></a-entity> -->
+ 
+       <!-- <a-text
+       position="4 1.5 -0.5"
+       rotation="0 -90 0"
+       width="8"
+       value="És cap aquí, en aquesta direcció, segueix avancant cap endevant sempre que puguis, i ..."
+       color="#FF1E1E"
+       >
+       </a-text>
+ 
+       <a-text
+       position="4 1.5 -0.5"
+       rotation="0 -180 0"
+       width="8"
+       value="FRENA      quan acabis de lleguir, parat i enlaire el cap;"
+       color="#FF1E1E"
+       >
+       </a-text> -->
+ 
+       <!-- <a-text position="0 1.5 -11" rotation="0 -90 0" value="FRENA      quan acabis de lleguir, parat i enlaire el cap" color="#FF1E1E"></a-text>
+       <a-text position="0 1.5 -11" width="4" value="la" color="#FF1E1E"></a-text>
+       <a-text position="0 1.5 -11" value="Res" color="#FF1E1E"></a-text>
+       <a-text position="0 1.5 -11" value="posta" color="#FF1E1E"></a-text>
+       <a-text position="0 1.5 -11" value="es" color="#FF1E1E"></a-text>
+       <a-text position="0 1.5 -11" value="aqui" color="#FF1E1E"></a-text> -->
+       </a-scene>
+</body>
+ 
+</html>
+

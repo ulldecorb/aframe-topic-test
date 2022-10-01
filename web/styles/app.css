@@ -1,31 +1,28 @@
 .next {
     position: absolute;
     left: 20px;
-    bottom: 20px;
-   
-   
- }
-  
- .next-button {
-    border: 3px solid rgb(92, 92, 92);
-    bottom: 0;
-    min-width: 58px;
-    min-height: 34px;
-  
-    position: absolute;
-    left: 0;
-    z-index: 9999;
-    border-radius: 8px;
-    text-align: center;
-    font-family: sans-serif,monospace;
-    font-size: 13px;
-    font-weight: bold;
-    color: rgb(92,92,92);
- }
-  
- .next-button:hover{
-    border: 3px solid rgb(255, 0, 0);
-    color: rgb(255, 0, 0);
+    bottom: 20px;   
  }
  
+.next-button {
+   border: 3px solid rgb(92, 92, 92);
+   bottom: 0;
+   min-width: 58px;
+   min-height: 34px;
+ 
+   position: absolute;
+   left: 0;
+   z-index: 9999;
+   border-radius: 8px;
+   text-align: center;
+   font-family: sans-serif,monospace;
+   font-size: 13px;
+   font-weight: bold;
+   color: rgb(92,92,92);
+}
+ 
+.next-button:hover{
+   border: 3px solid rgb(255, 0, 0);
+   color: rgb(255, 0, 0);
+} 
  
