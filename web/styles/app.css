@@ -2,9 +2,10 @@
     position: absolute;
     left: 20px;
     bottom: 20px;   
- }
- 
-.next-button {
+   }
+   
+   .next-button {
+   cursor: pointer;
    border: 3px solid rgb(92, 92, 92);
    bottom: 0;
    min-width: 58px;
@@ -25,4 +26,28 @@
    border: 3px solid rgb(255, 0, 0);
    color: rgb(255, 0, 0);
 } 
- 
+
+.rules {
+   position: absolute;
+   left: 40px;
+   top: 20px;
+   transition: opacity 2s;
+}
+
+.rules__text {
+   transition: opacity 2s;
+   position: absolute;
+   left: calc(50vw - 200px);
+   top: 20px;
+   border: 3px solid rgb(92, 92, 92);
+   background-color: rgb(219, 218, 218);
+   color: rgb(92,92,92);
+   padding: 20px;
+   text-align: center;
+   font-family: sans-serif,monospace;
+   font-size: 2rem;
+   font-weight: bold;
+   z-index: 9999;
+   width: 400px;
+   border-radius: 8px;
+}
