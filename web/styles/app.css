@@ -1,28 +1,89 @@
-.next {
-    position: absolute;
-    left: 20px;
-    bottom: 20px;   
- }
- 
-.next-button {
-   border: 3px solid rgb(92, 92, 92);
-   bottom: 0;
-   min-width: 58px;
-   min-height: 34px;
- 
-   position: absolute;
-   left: 0;
-   z-index: 9999;
-   border-radius: 8px;
-   text-align: center;
-   font-family: sans-serif,monospace;
-   font-size: 13px;
-   font-weight: bold;
-   color: rgb(92,92,92);
+.option {
+  position: absolute;
+  left: 20px;
+  bottom: 20px;
 }
- 
-.next-button:hover{
-   border: 3px solid rgb(255, 0, 0);
-   color: rgb(255, 0, 0);
-} 
- 
+
+.option:hover {
+  color: red;
+}
+
+.option__button {
+  cursor: pointer;
+  border: 3px solid #5c5c5c;
+  bottom: 0;
+  width: 100px;
+  min-width: 58px;
+  min-height: 34px;
+  position: absolute;
+  left: 0;
+  z-index: 9999;
+  border-radius: 8px;
+  text-align: center;
+  font-family: sans-serif,monospace;
+  font-size: 13px;
+  font-weight: bold;
+  color: #5c5c5c;
+}
+
+.option__button:hover {
+  background-color: #5c5c5c;
+  color: #fff;
+}
+
+.option__nick {
+  bottom: 34px;
+}
+
+.nick {
+  position: absolute;
+  top: 10vh;
+  left: 10vw;
+  z-index: 9999;
+  border: 3px solid #5c5c5c;
+  border-radius: 8px;
+  height: 80vh;
+  width: 80vw;
+  background-color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.rules {
+  position: absolute;
+  left: 40px;
+  top: 20px;
+  -webkit-transition: opacity 2s;
+  transition: opacity 2s;
+}
+
+.rules__text {
+  -webkit-transition: opacity 1s;
+  transition: opacity 1s;
+  position: absolute;
+  left: calc(50vw - 200px);
+  top: 20px;
+  border: 3px solid #5c5c5c;
+  background-color: #dbdada;
+  color: #5c5c5c;
+  padding: 20px;
+  text-align: center;
+  font-family: sans-serif,monospace;
+  font-size: 2rem;
+  font-weight: bold;
+  z-index: 9999;
+  width: 400px;
+  border-radius: 8px;
+}
+/*# sourceMappingURL=app.css.map */
