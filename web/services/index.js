@@ -1,8 +1,8 @@
-hideElement('test', 'rules');
+hideStartElement('test', 'startRules');
 multiplyElement('directionIcon', 'scene');
 
-function toggleButton () {
-    const button = document.getElementById('rules');
+function toggleBoxHandler (id) {
+    const button = document.getElementById(id);
     let isToggled = button.style.display;
     const dispplayInfo = button.style.display
     if (isToggled === '') {
@@ -13,7 +13,11 @@ function toggleButton () {
     }
 }
 
-function hideElement(nameId, fatherNameId) {
+function hideElement (e) {
+    e.parentNode.style.display = 'none';
+}
+
+function hideStartElement(nameId, fatherNameId) {
     
     setTimeout(() => {
         const element = document.getElementById(nameId);

@@ -15,47 +15,59 @@
    <script src="https://aframe.io/releases/1.3.0/aframe.min.js"></script>
    <script src="js/createobjects.component.js"></script>
    <script src="./services/index.js"></script>
+   <!-- <script src="https://cdn.jsdelivr.net/gh/n5ro/aframe-physics-system@v$npm_package_version/dist/aframe-physics-system.min.js"></script> -->
 </head>
  
 <body>
-   <div class="next">
-       <button class="next-button" onclick="toggleButton()">RULES</button>
+
+    <!-- <<<< OPTIONS BOX >>>> -->
+   <div class="option">
+       <button class="option__button" onclick="toggleBoxHandler('startRules')">RULES</button>
+       <button class="option__nick option__button " 
+       onclick="toggleBoxHandler('nickBox')"
+       >NICK</button>
    </div>
-   <div class="rules" id="rules"  onclick="toggleButton()">
+
+   <div class="nick" id="nickBox">
+    <label for="nick" class="nick__text">Enter your nickname:</label>
+    <input type="text" id="nick" class="nick__input">
+    <button class="nick__handler">Enter</button>
+    <button class="nick__handler" onclick="hideElement(this)">Close</button>
+   </div>
+
+   <div class="rules" id="startRules">
     <h2 class="rules__text" id="test">
-        Segueix el cami de les llambordes grogues =>
+        <p>Segueix el cami de les llambordes grogues =></p>
     </h2>
    </div>
-   <a-scene 
-   id="scene">
 
-        <!-- <a-entity 
-            camera="userHeight: 1.6"
-            universals-controls
-            kinematic-body
-            position="0 5 0">
-        </a-entity> -->
 
-        <!-- GROUND -->
-        <!-- <a-grid static-body></a-grid> -->
 
-        <a-sky color="#00f"></a-sky>
+
+   <!-- >>> SCENE BY PHYSICS EXAMPLE   <<< -->
+   <!-- <a-scene id="scene" physics="debug: true"> -->
+   <a-scene id="scene">
+
+    <!-- >>>   CAMERA BY PHYSICS EXAMPLE  <<< -->
+    <!-- <a-entity camera look-controls></a-entity> -->
+
+       <a-sky color="#00f"></a-sky>
        <a-circle src="#platform" radius="50" rotation="-90 0 0"></a-circle>
-       <a-entity 
-            geometry="primitive: triangle" 
-            test >
+       <a-entity
+            geometry="primitive: triangle">
+            test
         </a-entity>
         
-       <a-entity
-       id="inici"
+       <a-entity id="inici"
            geometry="
            primitive: plane; 
            width: 4;
            height: 0.2"
            material="color: #FF1E1E"
            position="2 1.60 -0.5"
-           reveal-el
-       >
+           change-color
+           >
+           <!-- push-el -->
         </a-entity>
 
         <!-- <a-entity
@@ -114,5 +126,15 @@
 </body>
 </html>
 
+
+        <!-- <a-entity 
+            camera="userHeight: 1.6"
+            universals-controls
+            kinematic-body
+            position="0 5 0">
+        </a-entity> -->
+
+        <!-- GROUND -->
+        <!-- <a-grid static-body></a-grid> -->
 
 <!-- <a-marker-camera preset='firePng.png'></a-marker-camera> -->
